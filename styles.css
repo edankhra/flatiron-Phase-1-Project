@@ -1,3 +1,29 @@
 body {
-    background-color: rgb(20, 178, 231);
+    background-color:bisque;
+    font-family: monospace;
+}
+header {
+    font-size: larger;
+    
+   display: flex;
+   justify-content: center;
+   background: #0d6ba1;
+   opacity: .8;
+   height: 5rem;
+   padding: 1rem;
+}
+
+#design-collection {
+   margin: 2rem;
+}
+
+.card{
+    text-align: center;
+    border: grey solid 1px;
+    padding: 1rem;
+    width: 15rem;
+    height: 25rem;
+    display: inline-grid;
+    margin: 1rem 2rem;
+    box-shadow: 3px 4px #e04b52  
 }
