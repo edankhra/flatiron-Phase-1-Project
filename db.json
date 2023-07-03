@@ -1,0 +1,28 @@
+{
+  "designs": [
+    {
+      "id": 1,
+      "name": "Cotton",
+      "image": "https://raw.githubusercontent.com/edankhra/flatiron-Phase-1-Project/main/CottonEmbroidery.jpg",
+      "likes": 19
+    },
+    {
+      "id": 2,
+      "name": "Net",
+      "image": "https://raw.githubusercontent.com/edankhra/flatiron-Phase-1-Project/main/NetEmbroidery.jpg",
+      "likes": 14
+    },
+    {
+      "id": 3,
+      "name": "Gamthi",
+      "image": "https://raw.githubusercontent.com/edankhra/flatiron-Phase-1-Project/main/Gamthi.jpg",
+      "likes": 10
+    },
+    {
+      "id": 4,
+      "name": "Schiffli",
+      "image": "https://raw.githubusercontent.com/edankhra/flatiron-Phase-1-Project/main/SchiffliEmbroidery.png",
+      "likes": 16
+    }
+  ]
+}
