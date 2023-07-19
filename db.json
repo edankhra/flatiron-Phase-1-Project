@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Cotton",
       "image": "https://raw.githubusercontent.com/edankhra/flatiron-Phase-1-Project/main/CottonEmbroidery.jpg",
-      "likes": 19
+      "likes": 20
     },
     {
       "id": 2,
@@ -23,6 +23,12 @@
       "name": "Schiffli",
       "image": "https://raw.githubusercontent.com/edankhra/flatiron-Phase-1-Project/main/SchiffliEmbroidery.png",
       "likes": 16
+    },
+    {
+      "id": 5,
+      "name": "Zardozi",
+      "image": "https://raw.githubusercontent.com/edankhra/flatiron-Phase-1-Project/main/zardozi2.jpg",
+      "likes": 20
     }
   ]
 }
