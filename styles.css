@@ -1,73 +1,178 @@
-*{
-    margin: 0;
-    padding: 0;
+@media(max-width: 767px){
+#home, #about,#product, #contact,#menu, #design-collection
+{
+  width:100%;
+  padding:10px;
+  margin: 0 auto;  
+}
+}
+@media (max-width : 767px){
+    body{
+        margin:0;
+        padding:0;
+    }
+    main{
+        max-width: 100%;
+        margin: 0 auto;
+        padding:10px;
+    }
+}
+@media(max-width : 767px){
+    nav, ul, li{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px 0;
+    }
+}
+@media (max-width: 767px) {
+    address, #contact-form {
+      margin: 2rem;
+      padding: 10px;
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+      margin-bottom: 10px;
+    }
+  }
+main{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
 }
 body{
-    font-size: 100%;
-    font-family: sans-serif;
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
-div, section, span, ul, li, a{
-   box-sizing: border-box;
-}
-/* CSS reset */
 header{
-    width: 100%;
+    background-color: #5e5d5b;
+    background-image: #2d2d2d;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+nav{
     display: flex;
-    justify-content: space-between;
-    padding:   20px 1400px;
-    position: fixed;
-    z-index: 999;
+    justify-content: flex-end;
+    background-color: #353636;
+    padding: 10px;
 }
-#menu li{
-    list-style: none;
-    display: inline-block;
-    margin:20px;
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
-#menu li a{
-    color: #0e0101;
+li{
+    margin-left: 10px;
+}
+li a{
+    display: block;
+    padding: 10px;
     text-decoration: none;
-    font-size: 20px;
+    color:#faf4f8;
+}
+.nav-link:hover{
+    color: var(--mount-meadow) !important;
 }
 section{
+    padding: 20px;
     width: 100%;
     float: left;
     height: 100vh;
     position: relative;
+    display: block;
 }
 #home{
-   background-color: #eebcf3;
+   background-color: #f6e2f8;
 }
 #about{
-   background-color: #f7bebd;
+   background-color: #f7eabf;
 }
 #product{
-   background-color: #9c7a88;
+   background-color: #d5e8f5;
 }
 #contact{
-    background-color: #dadfb5;
+    background-color: #f1f5d4;
 }
 h1{
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50);
-    color:#0c0000;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 img{
-    height: 16rem;
-    width: 16rem;
-    margin:auto;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    margin-bottom: 10px;
 }
 #design-collection{
-    margin:4rem;
+    margin:2rem;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 .card {
-    text-align: center;
-    border: rgb(27, 26, 26) solid 1px;
-    padding: 1rem;
-    width: 21rem;
-    height: 26rem;
-    display: inline-grid;
-    margin: 2rem;
-    box-shadow: 3px 4px #5a0408 
+      text-align: center;
+      width: 300px;
+      border: 1px solid rgb(216, 48, 6);
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: inline-grid;
 }
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+.card p{
+    font-size: 16px;
+    font-weight: 200;
+}
+address, #contact-form {
+    margin: 4rem;
+    padding: 20px;
+  }
+  
+  #contact-form input,
+  #contact-form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #contact-form button:hover {
+    background-color: #45a049;
+  }
