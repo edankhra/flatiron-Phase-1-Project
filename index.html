@@ -5,38 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phase 1 Project</title>
     <!-- CSS RESET -->
+    
     <link rel="stylesheet" href="styles.css">
-    <script defer src="index.js"></script>
-   
-
 </head>
 <body>
+    
+    <header>
+      <nav>
+        <ul>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About Us</a></li>
+            <li><a href="#product" class="nav-link">Product</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul> 
+      </nav>
+    </header>
+    <main>
     <section id="home">
-        <header>
-        <ul id="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#product">Product</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-       
-        </header>
-        <h1>Mahavir Creation</h1>
+       <h1>Mahavir Creation</h1>
     </section>
     
-    <section id="about"><h1>This Is About</h1></section>
+    <section id="about">
+        <h1>This Is About</h1>
+    </section>
     <section id="product">
-    
         <div id="design-collection"></div>
     </section>
-    <section id="contact"><h1>Contact us</h1></section>
-
-    <!--div begins-->
+    <section id="contact">
+        <h1>Contact us</h1>
+        <address>
+            <h2>Mahavir Creation</h2>
+            <p></p>
+            <p>Surat, Gujarat</p>
+            <p>India</p>
+            <p>Contact: <a href="tel: +91 1234567890">123-456-7890</a></p>
+        </address>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Name">
+            <input type="email" id="email" placeholder="Email">
+            <textarea id="message" placeholder="Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
         
-    <!--div ends-->
-
-    <!-- footer begins -->
-    
-    <!-- footer ends -->
+    </section>
+</main>
+<script defer src="index.js"></script>
 </body>
 </html>
