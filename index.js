@@ -1,14 +1,7 @@
 // we have an API of Designs
-
-
-
 // we want to fetch datd form our API of design and we want to render them to the DOM
-
-
 // we ant to make a list of design with  id, name, image, likes
-
-
-//let addDesign = false;
+// For upadeted likes
 function updateLikes(id, newNumberOfLikes) {
     fetch(`http://localhost:3000/designs/${id}`, {
       method: "PATCH",
@@ -24,7 +17,7 @@ function updateLikes(id, newNumberOfLikes) {
     })
     
   }
-
+// Creat card for all designs
 function createCardElement(design){
     let card =document.createElement("div")
     card.classList.add("card")
@@ -54,55 +47,28 @@ function createCardElement(design){
    document.getElementById("design-collection").appendChild(card);
 }
 
-// function sendItOut(newDesign){
-//     fetch("http://localhost:3000/designs", {
-//       method: "POST",
-//        headers:
-  
-//           {
-//             "Content-Type": "application/json",
-//              Accept: "application/json"
-//           },
-  
-//       body: JSON.stringify({
-//             ...newDesign,
-//             "likes": 0
-//       })
-//     }).then(
-//       (response) => response.json()
-//     )
-//     .then(responseToy  => createCardElement(responseDesign))
-//   }
-
-
+// Fetch all designs from the API with DOM
 document.addEventListener("DOMContentLoaded", () => {
 
 fetch("http://localhost:3000/designs")
    .then(res => res.json())
    .then(designs => designs.forEach(design => createCardElement(design)))
 })
+// Event listener for submitting the contact form
+const contactForm = document.getElementById('contact-form');
+contactForm.addEventListener('submit', event => {
+  event.preventDefault();
+  // Handle form submission
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+  // Perform necessary actions with the form data
+});
 
-// const form = document.querySelector("form.add-design-form")
-// form.addEventListener("submit", (e) => {
-//     e.preventDefault();
-//     const formData = Object.fromEntries(new
-//         FormData(e.target));
-//         console.log(formData);
-//         sendItOut(formData)
-// })
 
 
 
 
-//   const addBtn = document.querySelector("#new-design-btn");
-//   const designFormContainer = document.querySelector(".container");
-//   addBtn.addEventListener("click", () => {
-//     // hide & seek with the form
-//     addDesign = !addDesign;
-//     if (addDesign) {
-//       designFormContainer.style.display = "block";
-//     } else {
-//       designFormContainer.style.display = "none";
-//     }
-//   });
-// })
+
+
+
