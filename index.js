@@ -46,6 +46,17 @@ function createCardElement(design){
    card.append(h2, img, p, button)
    document.getElementById("design-collection").appendChild(card);
 }
+// const renderDesign = (designData) => {
+//   const  designContainer = document.querySelector("#designContainer")
+//   const row = document.createElement("div")
+//   row.className = "row"
+
+//   designData.forEach( card => {
+//     const newDesign = createCard(card)
+//     row.appendChild(newDesign)
+//   })
+//   designContainer.appendChild(row)
+// }
 
 // Fetch all designs from the API with DOM
 document.addEventListener("DOMContentLoaded", () => {

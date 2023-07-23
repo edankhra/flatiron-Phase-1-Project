@@ -58,7 +58,7 @@ header{
 nav{
     display: flex;
     justify-content: flex-end;
-    background-color: #353636;
+    background-color: #923604;
     padding: 10px;
 }
 ul{
@@ -88,16 +88,21 @@ section{
     display: block;
 }
 #home{
-   background-color: #f6e2f8;
+   background-color: #923604;
+   border: 2px solid rgb(237, 232, 230);
 }
 #about{
-   background-color: #f7eabf;
+   background-color: #923604;
+   border: 2px solid rgb(237, 232, 230);
+   padding: 20px;
 }
 #product{
-   background-color: #d5e8f5;
+   background-color: #923604;
+   border: 2px solid rgb(237, 232, 230)
 }
 #contact{
-    background-color: #f1f5d4;
+    background-color: #923604;
+    border: 2px solid rgb(237, 232, 230)
 }
 h1{
     border-radius: 5px;
@@ -111,6 +116,7 @@ h1{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+    color: #ccc;
 }
 img{
     width:100%;
@@ -131,13 +137,15 @@ img{
 }
 .card {
       text-align: center;
-      width: 300px;
-      border: 1px solid rgb(216, 48, 6);
+      width: 300px; 
+      border: 1px solid rgb(237, 232, 230);
       border-radius: 5px;
       padding: 10px;
       margin: 10px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      display: inline-grid;
+      box-shadow: 0 2px 4px rgba(15, 11, 11, 0.1);
+      /* display: inline-grid; */
+      display: flex;
+      flex-direction: column;
 }
 .card h2 {
     font-size: 20px;
@@ -167,7 +175,7 @@ address, #contact-form {
     width: 100%;
     padding: 10px;
     background-color: #4CAF50;
-    color: white;
+    color: #ccc;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -175,4 +183,13 @@ address, #contact-form {
   
   #contact-form button:hover {
     background-color: #45a049;
+  }
+  p{
+    font-size: 2em;
+    color: #ccc;
+  }
+  span{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: gold;
   }
