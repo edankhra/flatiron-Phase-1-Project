@@ -87,6 +87,18 @@ section{
     position: relative;
     display: block;
 }
+/* .home-content{
+  height: 20vh;
+}
+.about-content{
+  height: 30vh;
+}
+.product-content{
+  height: 50vh;
+}
+.contact-content{
+  height: 50vh;
+} */
 #home{
    background-color: #923604;
    border: 2px solid rgb(237, 232, 230);
@@ -98,7 +110,8 @@ section{
 }
 #product{
    background-color: #923604;
-   border: 2px solid rgb(237, 232, 230)
+   border: 2px solid rgb(237, 232, 230);
+   overflow-x: scroll;
 }
 #contact{
     background-color: #923604;
@@ -155,12 +168,10 @@ img{
     font-size: 16px;
     font-weight: 200;
 }
-address, #contact-form {
-    margin: 4rem;
-    padding: 20px;
-  }
-  
-  #contact-form input,
+address{
+  margin-bottom: 1rem;
+}
+#contact-form input,
   #contact-form textarea {
     display: block;
     width: 100%;
@@ -187,6 +198,7 @@ address, #contact-form {
   p{
     font-size: 2em;
     color: #ccc;
+    margin: 0;
   }
   span{
     font-size: xx-large;
