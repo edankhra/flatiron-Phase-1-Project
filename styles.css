@@ -90,11 +90,14 @@ section{
 #home{
    background-color: #923604;
    border: 2px solid rgb(237, 232, 230);
+   overflow-y: scroll;
+   overflow-x: scroll;
 }
 #about{
    background-color: #923604;
    border: 2px solid rgb(237, 232, 230);
    padding: 20px;
+   overflow-x: scroll;
 }
 #product{
    background-color: #923604;
@@ -103,7 +106,8 @@ section{
 }
 #contact{
     background-color: #923604;
-    border: 2px solid rgb(237, 232, 230)
+    border: 2px solid rgb(237, 232, 230);
+    overflow-x: scroll;
 }
 h1{
     border-radius: 5px;
