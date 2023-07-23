@@ -2,21 +2,9 @@
 // we want to fetch datd form our API of design and we want to render them to the DOM
 // we ant to make a list of design with  id, name, image, likes
 // For upadeted likes
-
 let desginData = {};
-function updateLikes(id, newNumberOfLikes) {
-    // fetch(`http://localhost:3000/designs/${id}`, {
-    //   method: "PATCH",
-    //   headers:
-    // {
-    //   "Content-Type": "application/json",
-    //   Accept: "application/json"
-    // },
-  
-    // body: JSON.stringify({
-    //   "likes": newNumberOfLikes
-    // })
-    // })
+function updateLikes(id) {
+
     const newDesgin = desginData.filter((design=> design.id === id))
     newDesgin.likes= ++desginData.likes;
     desginData = {...desginData, newDesgin}
@@ -50,17 +38,6 @@ function createCardElement(design){
    card.append(h2, img, p, button)
    document.getElementById("design-collection").appendChild(card);
 }
-// const renderDesign = (designData) => {
-//   const  designContainer = document.querySelector("#designContainer")
-//   const row = document.createElement("div")
-//   row.className = "row"
-
-//   designData.forEach( card => {
-//     const newDesign = createCard(card)
-//     row.appendChild(newDesign)
-//   })
-//   designContainer.appendChild(row)
-// }
 
 // Fetch all designs from the API with DOM
 document.addEventListener("DOMContentLoaded", () => {

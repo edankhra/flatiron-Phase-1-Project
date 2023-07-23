@@ -87,18 +87,6 @@ section{
     position: relative;
     display: block;
 }
-/* .home-content{
-  height: 20vh;
-}
-.about-content{
-  height: 30vh;
-}
-.product-content{
-  height: 50vh;
-}
-.contact-content{
-  height: 50vh;
-} */
 #home{
    background-color: #923604;
    border: 2px solid rgb(237, 232, 230);
