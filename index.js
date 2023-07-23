@@ -2,20 +2,24 @@
 // we want to fetch datd form our API of design and we want to render them to the DOM
 // we ant to make a list of design with  id, name, image, likes
 // For upadeted likes
+
+let desginData = {};
 function updateLikes(id, newNumberOfLikes) {
-    fetch(`http://localhost:3000/designs/${id}`, {
-      method: "PATCH",
-      headers:
-    {
-      "Content-Type": "application/json",
-      Accept: "application/json"
-    },
+    // fetch(`http://localhost:3000/designs/${id}`, {
+    //   method: "PATCH",
+    //   headers:
+    // {
+    //   "Content-Type": "application/json",
+    //   Accept: "application/json"
+    // },
   
-    body: JSON.stringify({
-      "likes": newNumberOfLikes
-    })
-    })
-    
+    // body: JSON.stringify({
+    //   "likes": newNumberOfLikes
+    // })
+    // })
+    const newDesgin = desginData.filter((design=> design.id === id))
+    newDesgin.likes= ++desginData.likes;
+    desginData = {...desginData, newDesgin}
   }
 // Creat card for all designs
 function createCardElement(design){
@@ -61,9 +65,15 @@ function createCardElement(design){
 // Fetch all designs from the API with DOM
 document.addEventListener("DOMContentLoaded", () => {
 
-fetch("http://localhost:3000/designs")
+fetch("https://raw.githubusercontent.com/edankhra/flatiron-Phase-1-Project/main/db.json")
    .then(res => res.json())
-   .then(designs => designs.forEach(design => createCardElement(design)))
+   .then(({designs}) => {
+    console.log(designs, 'designs');
+    
+    desginData = designs; 
+    designs.forEach(design => createCardElement(design))
+   }
+    )
 })
 // Event listener for submitting the contact form
 const contactForm = document.getElementById('contact-form');
@@ -75,9 +85,6 @@ contactForm.addEventListener('submit', event => {
   const message = document.getElementById('message').value;
   // Perform necessary actions with the form data
 });
-
-
-
 
 
 
